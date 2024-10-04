@@ -15,10 +15,10 @@ def plot_pzmap(
     """
     Función que grafica el diagrama de polos y ceros
 
-    :param axes:  eje en donde se grafican los polos y ceros
-    :param poles: lista de polos. Recordar que los imaginarios se ponen con 1j
-    :param zeros: lista de ceros. Recordar que los imaginarios se ponen con 1j
-    :param radius: valor del radio del círculo que se dibuja. Si es None, no se dibuja ningún círculo
+    :param axes:  Eje en donde se grafican los polos y ceros
+    :param poles: Lista de polos. Recordar que los imaginarios se ponen con 1j
+    :param zeros: Lista de ceros. Recordar que los imaginarios se ponen con 1j
+    :param radius: Valor del radio del círculo que se dibuja. Si es None, no se dibuja ningún círculo
 
     """
     axes.grid()
@@ -43,11 +43,11 @@ def plot_plantilla(
     """
     Función que grafica la plantilla
 
-    :param ax:  eje en donde se grafica la plantilla
-    :param wa: frecuencia de atenuación en rad/s
-    :param wp: frecuencia de paso en rad/s
-    :param gp: ganancia de la banda de paso en dB
-    :param ga: ganancia de la banda de atenuación en dB
+    :param ax: Eje en donde se grafica la plantilla
+    :param wa: Frecuencia de atenuación en rad/s
+    :param wp: Frecuencia de paso en rad/s
+    :param gp: Ganancia de la banda de paso en dB
+    :param ga: Ganancia de la banda de atenuación en dB
 
     """
     if isinstance(wa, float):
@@ -87,11 +87,11 @@ def plot_bode(
     """
     Función que grafica el bode
 
-    :param mag_axes: eje donde se graficará la magnitud de la respuesta en frecuencia
-    :param ph_axes: eje donde se graficará la fase de la respuesta en frecuencia
-    :param magnitude: valores de magnitud de la respuesta en frecuencia en dB
-    :param phase: valores de la fase de la respuesta en frecuencia en grados (deg)
-    :param freqs: puntos de frecuencia donde la magnitud o fase fueron evaluados en Hz
+    :param mag_axes: Eje donde se graficará la magnitud de la respuesta en frecuencia
+    :param ph_axes: Eje donde se graficará la fase de la respuesta en frecuencia
+    :param magnitude: Valores de magnitud de la respuesta en frecuencia en dB
+    :param phase: Valores de la fase de la respuesta en frecuencia en grados (deg)
+    :param freqs: Puntos de frecuencia donde la magnitud o fase fueron evaluados en Hz
     """
     ph_axes.sharex(mag_axes)
     mag_axes.grid()
