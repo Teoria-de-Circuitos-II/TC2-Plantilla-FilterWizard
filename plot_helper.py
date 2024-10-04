@@ -15,8 +15,9 @@ def plot_pzmap(
     """
     Función que grafica el diagrama de polos y ceros
 
+    :param axes:  eje en donde se grafican los polos y ceros
     :param poles: lista de polos. Recordar que los imaginarios se ponen con 1j
-    :param zeros: lista de ceros
+    :param zeros: lista de ceros. Recordar que los imaginarios se ponen con 1j
     :param radius: valor del radio del círculo que se dibuja. Si es None, no se dibuja ningún círculo
 
     """
@@ -42,6 +43,7 @@ def plot_plantilla(
     """
     Función que grafica la plantilla
 
+    :param ax:  eje en donde se grafica la plantilla
     :param wa: frecuencia de atenuación en rad/s
     :param wp: frecuencia de paso en rad/s
     :param gp: ganancia de la banda de paso en dB
@@ -74,7 +76,6 @@ def plot_plantilla(
             ax.add_patch(Rectangle((0, -ga), wa[0], -ga, facecolor="red", alpha=0.2))
             ax.add_patch(Rectangle((wa[1], -ga), 100, -ga, facecolor="red", alpha=0.2))
         # el valor 100 hardcodeado se puede modificar para que se extienda el cuadrado la longitud que quieran
-
 
 def plot_bode(
     mag_axes: plt.Axes,

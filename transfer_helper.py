@@ -6,6 +6,7 @@ import sympy as sp
 
 #Funciones para conseguir la función transferencia
 
+
 def poly_to_hsqr(poly: sp.Poly, xi: Union[float, sp.Symbol]) -> sp.Expr:
     """
         Función que parte de un polinomio y un Xi y devuelve la funcion H^2(w)
