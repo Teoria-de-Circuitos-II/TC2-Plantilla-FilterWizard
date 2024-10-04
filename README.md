@@ -22,7 +22,7 @@ En el caso de que lo necesiten pueden incluir otras librerías
 pip install -r requirements.txt
 ```
 
-### Si se utiliza un notebook, ejecutar en una celda:
+### Si se utiliza un notebook (.ipynb), ejecutar en una celda:
 
 
 ```bash
