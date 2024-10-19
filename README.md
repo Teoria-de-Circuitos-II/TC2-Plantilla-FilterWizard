@@ -28,3 +28,5 @@ pip install -r requirements.txt
 ```bash
 !pip install scipy matplotlib sympy numpy
 ```
+
+
