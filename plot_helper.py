@@ -46,10 +46,10 @@ def plot_plantilla(
         :param ax: Eje en donde se grafica la plantilla
         :param wa: Frecuencia de atenuación en rad/s
         :param wp: Frecuencia de paso en rad/s
-        :param gp: Ganancia de la banda de paso en dB
-        :param ga: Ganancia de la banda de atenuación en dB
+        :param gp: Ganancia de la banda de paso
+        :param ga: Ganancia de la banda de atenuación
     """
-    if isinstance(wa, float):
+    if isinstance(wa, (float, int)):
         # Lowpass
         if wa > wp:
             ax.add_patch(Rectangle((0, 0), wp, -gp,
